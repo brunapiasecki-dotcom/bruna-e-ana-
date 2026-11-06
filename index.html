@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bruna & Ana | Portfólio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #09090f;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    background: #101019;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c084fc;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #c084fc;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: radial-gradient(circle, #25143c, #09090f 65%);
+}
+
+.hero h1 {
+    font-size: clamp(40px, 8vw, 75px);
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #c084fc;
+}
+
+.hero p {
+    color: #b8b8c5;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: linear-gradient(90deg, #9333ea, #ec4899);
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+}
+
+section {
+    padding: 85px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 45px;
+    color: #c084fc;
+}
+
+.about {
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+    color: #b8b8c5;
+    line-height: 1.8;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #151520;
+    padding: 30px;
+    border: 1px solid #29203b;
+    border-radius: 18px;
+    text-align: center;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #c084fc;
+}
+
+.card h3 {
+    color: #d8b4fe;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.contact {
+    text-align: center;
+    background: #101019;
+}
+
+.contact p {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    color: #777;
+    background: #09090f;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">B&A.</div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h1>Olá, somos <span>Bruna & Ana</span></h1>
+    <p>Transformando criatividade em ideias incríveis.</p>
+    <a href="#sobre" class="btn">Conheça nosso trabalho</a>
+</section>
+
+<section id="sobre">
+    <h2 class="section-title">Sobre nós</h2>
+
+    <div class="about">
+        <p>
+            Somos Bruna e Ana, duas pessoas apaixonadas por criatividade,
+            tecnologia e inovação. Gostamos de aprender coisas novas,
+            desenvolver projetos e transformar ideias em realidade.
+            Este é nosso espaço para apresentar um pouco do nosso
+            trabalho e da nossa personalidade.
+        </p>
+    </div>
+</section>
+
+<section id="habilidades">
+    <h2 class="section-title">Nossas habilidades</h2>
+
+    <div class="cards">
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>HTML</h3>
+            <p>Criação e estruturação de páginas web.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎨</div>
+            <h3>CSS</h3>
+            <p>Design, cores e interfaces modernas.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">✨</div>
+            <h3>Criatividade</h3>
+            <p>Ideias criativas e soluções inovadoras.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projetos">
+    <h2 class="section-title">Nossos projetos</h2>
+
+    <div class="cards">
+        <div class="card">
+            <div class="icon">🌐</div>
+            <h3>Projeto 01</h3>
+            <p>Nosso primeiro projeto de desenvolvimento web.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💜</div>
+            <h3>Projeto 02</h3>
+            <p>Uma criação feita com criatividade e dedicação.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚀</div>
+            <h3>Projeto 03</h3>
+            <p>Novas ideias e experiências em desenvolvimento.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contato">
+    <h2 class="section-title">Entre em contato</h2>
+    <p>Gostou do nosso trabalho? Vamos conversar!</p>
+    <a href="mailto:contato@exemplo.com" class="btn">
+        Enviar e-mail
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Bruna & Ana | Feito com 🖤</p>
+</footer>
+
+</body>
+</html>
